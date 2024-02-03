@@ -4,10 +4,10 @@
 - what we need:
 	- A PC runs Python code.
 	- Install Wireshark, purpose capture traffic.
-- First, create folder `Lab-2`:
+- First, create folder `LAB_2-AES-Security`:
 ```
-mkdir Lab-2/
-cd Lab-2/
+mkdir LAB_2-AES-Security
+cd LAB_2-AES-Security
 ```
 
 ### Step 1: [MIMT Attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) read Raw-data.
@@ -17,6 +17,8 @@ cd Lab-2/
 	- Terminal 1: `python3 socket_client.py`
 	- Terminal 2: `python3 socket_server.py`
 - Community between server and client, we use can see data when use wireshark.
+- ![Image 1](https://github.com/VinhLin/LAB_2-AES-Security/blob/main/MIMT_Attack/Image_1.png)
+- ![Image 2](https://github.com/VinhLin/LAB_2-AES-Security/blob/main/MIMT_Attack/Image_2.png)
 
 ### Step 2: Encryption data use AES
 - Install library [pycryptodome](https://github.com/Legrandin/pycryptodome):
@@ -35,6 +37,7 @@ python3 Server.py
 python3 Client.py
 ```
 - The result is Wireshark cannot read data.
+- ![Result](https://github.com/VinhLin/LAB_2-AES-Security/blob/main/AES-First-Demo/Result.png)
 
 
 
